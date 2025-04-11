@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./About.module.css";
+import hero from "../../assets/about/aboutImage1.png";
+import cursorIcon from "../../assets/about/cursorIcon.png";
+import serverIcon from "../../assets/about/serverIcon.png";
 
 const About = () => {
   return (
@@ -7,12 +10,12 @@ const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
       <img
-        src="../../assets/about/aboutImage1.png"
+        src={hero}
         alt=" me sitting with a laptop" className={styles.aboutImage}
       />
       <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
-          <img src="../../assets/about/cursorIcon.png" alt="cursor icon" />
+          <img src={cursorIcon} alt="cursor icon" />
           <div className={styles.aboutItemText}>
             <h3>Frontend Devloper</h3>
             <p>
@@ -23,7 +26,7 @@ const About = () => {
         </li>
 
         <li className={styles.aboutItem}>
-          <img src="../../assets/about/serverIcon.png" alt="server icon" />
+          <img src={serverIcon} alt="server icon" />
           <div className={styles.aboutItemText}>
             <h3>Backend Devloper</h3>
             <p>

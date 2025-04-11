@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
+import project from "../../assets/history/project.jpg";
 
 // Import all skill images dynamically
 const skillImages = import.meta.glob("../../assets/skills/*.png", {
@@ -34,7 +35,7 @@ export const Experience = () => {
 
             <img
 
-              src="../../assets/history/project.jpg"
+              src={project}
 
               alt="Personal Project logo"
 

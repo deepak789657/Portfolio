@@ -2,11 +2,17 @@ import React from "react";
 import styles from "./Projects.module.css";
 import { ProjectCard } from "./projectCard";
 
+// Dynamically import project images
+const projectImages = import.meta.glob("../../assets/project/*.{png,jpg,jpeg,webp}", {
+  eager: true,
+  import: "default",
+});
+
 export const Projects = () => {
   const project = {
     title: "Airbnb Clone",
     description: "Developed a full-stack Airbnb clone ",
-    imageSrc: "../../assets/project/project.jpg",
+    imageSrc: projectImages["../../assets/project/project1.png"],
     skills: [],
     demoLink: "https://airbnb-05qi.onrender.com/listings", // You can update this to the real demo if available
     sourceLink: "https://github.com/deepak789657/Airbnb"
