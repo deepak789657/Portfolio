@@ -1,7 +1,7 @@
 
 import React from "react";
 import styles from "./Hero.module.css"
-// import hero from "./src/assets/about/aboutImage1.png";
+import hero from "../../assets/hreo/heroImage.png";
 
 export const Hero = () => {
   return (
@@ -15,7 +15,7 @@ export const Hero = () => {
         </p>
         <a href="deepakkumar887753@gmail.com" className={styles.contactBtn}>Contact Me</a>
       </div>
-      <img src="src\assets\hreo\heroImage.png" alt=" my image " className={styles.heroImg}  />
+      <img src={hero} alt=" my image " className={styles.heroImg}  />
       <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div>
     </section>
