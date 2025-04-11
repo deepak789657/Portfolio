@@ -34,7 +34,7 @@ export const Experience = () => {
 
             <img
 
-              src="./src/assets/history/project.jpg"
+              src="../../assets/history/project.jpg"
 
               alt="Personal Project logo"
 

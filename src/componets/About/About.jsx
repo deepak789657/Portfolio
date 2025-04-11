@@ -7,12 +7,12 @@ const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
       <img
-        src="./src/assets/about/aboutImage1.png"
+        src="../../assets/about/aboutImage1.png"
         alt=" me sitting with a laptop" className={styles.aboutImage}
       />
       <ul className={styles.aboutItems}>
         <li className={styles.aboutItem}>
-          <img src="./src/assets/about/cursorIcon.png" alt="cursor icon" />
+          <img src="../../assets/about/cursorIcon.png" alt="cursor icon" />
           <div className={styles.aboutItemText}>
             <h3>Frontend Devloper</h3>
             <p>
@@ -23,7 +23,7 @@ const About = () => {
         </li>
 
         <li className={styles.aboutItem}>
-          <img src="./src/assets/about/serverIcon.png" alt="server icon" />
+          <img src="../../assets/about/serverIcon.png" alt="server icon" />
           <div className={styles.aboutItemText}>
             <h3>Backend Devloper</h3>
             <p>
