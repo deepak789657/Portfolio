@@ -57,7 +57,7 @@
     width: 500px;
     z-index: 1;
     height: 600px;
-    border-radius: 100%;
+    border-radius: 20%;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
