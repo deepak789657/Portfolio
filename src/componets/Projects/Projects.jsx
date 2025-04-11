@@ -12,7 +12,8 @@ export const Projects = () => {
   const project = {
     title: "Airbnb Clone",
     description: "Developed a full-stack Airbnb clone ",
-    imageSrc: projectImages["../../assets/project/project1.png"],
+    imageSrc: "../../assets/project/project.jpg",
+    imageSrc: projectImages["../../assets/project/project.jpg"],
     skills: [],
     demoLink: "https://airbnb-05qi.onrender.com/listings", // You can update this to the real demo if available
     sourceLink: "https://github.com/deepak789657/Airbnb"
