@@ -5,66 +5,91 @@
   margin-top: 120px;
   background-color: var(--color-secondary);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 48px 10%;
+  gap: 20px;
+  box-sizing: border-box;
 }
 
+/* LEFT TEXT SECTION */
 .text h2 {
-  font-size: 80px;
+  font-size: 48px;
   font-weight: 700;
-  letter-spacing: 4px;
-}
-
-.text p {
-  font-size: 40px;
-  font-weight: 400;
   letter-spacing: 2px;
 }
 
+.text p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* LINKS LIST */
 .links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start; /* Desktop par bhi shuruat se */
   list-style: none;
-  gap: 26px;
+  gap: 18px;
+  padding: 0;
 }
 
+/* SINGLE LINK ROW */
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
+}
+
+.link img {
+  width: 32px;
+  height: 32px;
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
+/* EMAIL TEXT FIX */
+.email {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    /* Yahan center ki jagah flex-start kiya hai */
+    align-items: flex-start; 
+    text-align: left;
+    padding: 40px 6%;
+    gap: 30px;
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .text h2 {
+    font-size: 36px;
+  }
+
+  .text p {
+    font-size: 18px;
   }
 
   .links {
-    align-items: center;
+    /* Mobile par icons ko shuru se start karne ke liye */
+    align-items: flex-start; 
+    width: 100%;
   }
-}
 
-.resume{
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
+  .link {
+    width: 100%;
+    justify-content: flex-start; /* Icons left se start honge */
+  }
 }

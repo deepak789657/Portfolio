@@ -12,29 +12,27 @@ export const ProjectCard = ({ project }) => {
         />
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.description}>{project.description}</p>
-        <ul className={styles.skills}>
+        {/* <ul className={styles.skills}>
           {project.skills.map((skill, index) => (
             <li key={index} className={styles.skill}>
               {skill}
             </li>
           ))}
-        </ul>
+        </ul> */}
         <div className={styles.links}>
-          <a
-            href={project.demoLink}
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Demo
-          </a>
           <a
             href={project.sourceLink}
             className={styles.link}
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             Source
+          </a>
+          <a
+            href={project. projectLink}
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer">
+            Link
           </a>
         </div>
       </div>
